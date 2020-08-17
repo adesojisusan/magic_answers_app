@@ -1,7 +1,5 @@
-import 'dart:html';
-
-import 'package:flutter/material.dart';
 import 'dart:math';
+import 'package:flutter/material.dart';
 
 void main() {
   runApp(MagicAnswers());
@@ -28,7 +26,7 @@ void main() {
                    child: FlatButton(
                      onPressed: (){
                        setState(() {
-
+                       magicAnswers = Random().nextInt(6);
                        });
                      },
                      child: Image(
